@@ -7,7 +7,7 @@ return array (
     'download' => 'Descarcă',
     'edit_customer' => 'Salveaza',
     'edit_customer_info' => 'Editarea profilului',
-    'edit_record' => 'SE PROCESEAZĂ',
+    'edit_record' => 'SE PROCESEAZĂ1',
     'home' => 'Home',
     'login' => 'Intra',
     'logout' => 'Iesire',

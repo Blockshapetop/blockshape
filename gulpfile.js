@@ -14,7 +14,7 @@ var elixir = require('laravel-elixir');
 elixir(function (mix) {
     mix.styles([
         '../bower_components/font-awesome/css/font-awesome.css',
-        '../bower_components/angular-material/angular-material1.css',
+        '../bower_components/angular-material/angular-material1sa.css',
     ], 'public/css/vendor.css');
 
     mix.styles([
