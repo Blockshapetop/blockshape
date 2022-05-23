@@ -21,3 +21,4 @@ trait DescOrders
         return $instance->newQueryWithoutScope(new DescOrdersScope);
     }
 }
+

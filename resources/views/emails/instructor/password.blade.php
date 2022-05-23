@@ -5,3 +5,4 @@
 
     {!! auto_p(trans('emails.instructor.password.body', ['password' => $password])) !!}
 @endsection
+

