@@ -242,3 +242,4 @@ class AuthController extends Controller
         return $request->only($this->loginUsername(), 'password') + ['role' => 'instructor', 'active' => 1];
     }
 }
+

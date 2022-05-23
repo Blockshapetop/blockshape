@@ -18,3 +18,4 @@ class Discount
         return $this->price * ((100 - $this->discount) / 100);
     }
 }
+

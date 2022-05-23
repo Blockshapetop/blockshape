@@ -67,3 +67,5 @@ if ($offerId = Session::get('offer_id')) {
         }
     </script>
 @append
+
+

@@ -57,3 +57,4 @@ trait ValidatesQiwiRequests
         return $order;
     }
 }
+

@@ -5,3 +5,5 @@
 
     {!! auto_p(trans('emails.admin.record.body', ['instructor' => $instructor, 'url' => $url])) !!}
 @endsection
+
+

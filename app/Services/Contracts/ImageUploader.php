@@ -9,3 +9,4 @@ interface ImageUploader
 {
     public function upload($image, Closure $onSuccess = null, Closure $onFailure = null);
 }
+
