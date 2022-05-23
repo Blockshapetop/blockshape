@@ -38,3 +38,4 @@ class QuizMap implements QuizMapContract
         return $this->mapRepository->detachHint($questionId, $answerId, $hintId);
     }
 }
+

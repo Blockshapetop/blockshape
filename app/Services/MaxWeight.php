@@ -14,3 +14,4 @@ class MaxWeight
         return round($height/100, 2);
     }
 }
+

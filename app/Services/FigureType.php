@@ -30,3 +30,4 @@ class FigureType
         return static::TYPE_CLEPSIDRA;
     }
 }
+

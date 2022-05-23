@@ -68,3 +68,4 @@ class CardioReactionDetector implements DetectorContract
         }
     }
 }
+

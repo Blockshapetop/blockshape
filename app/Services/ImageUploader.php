@@ -35,3 +35,4 @@ class ImageUploader implements ImageUploaderContract
         return $file;
     }
 }
+

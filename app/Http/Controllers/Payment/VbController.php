@@ -181,3 +181,7 @@ class VbController extends Controller
         return view('payment.vb.failure');
     }
 }
+
+
+
+

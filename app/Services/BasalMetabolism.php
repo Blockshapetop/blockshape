@@ -24,3 +24,5 @@ class BasalMetabolism
         return round(($height / 100), 2);
     }
 }
+
+
