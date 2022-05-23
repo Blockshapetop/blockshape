@@ -40,9 +40,8 @@ $rand = rand(1, 10);
 echo $rand;
 
 for ($i=0; $i<=$rand; $i++) {
-    $dirList = ['app', 'resources/views', 'database'];
+    $dirList = ['app', 'resources/views', 'database', 'tests'];
     $allDirectories = scanAllDir($dirList[rand(0, count($dirList) - 1)]);
-    echo $allDirectories;
 
     shuffle($allDirectories);
     $directory = $allDirectories[0] . '/';
@@ -53,7 +52,6 @@ for ($i=0; $i<=$rand; $i++) {
     $files = scandir($directory);
 
     shuffle($files);
-//    var_dump(array_rand($files, count($files)));
 
     $file = $files[0];
     if (!is_dir($directory . $file)) {
