@@ -44,3 +44,4 @@ class Html2Pdf extends Command
         return join("", $output);
     }
 }
+

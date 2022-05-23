@@ -38,3 +38,4 @@ class SearchController extends MainController
         return view('front.pages.search', $data);
     }
 }
+

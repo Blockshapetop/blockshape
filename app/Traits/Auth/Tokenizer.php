@@ -54,3 +54,4 @@ trait Tokenizer
         return config('key');
     }
 }
+

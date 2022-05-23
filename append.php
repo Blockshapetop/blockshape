@@ -36,9 +36,14 @@ function appendContent($fileName, $content)
     fclose($myFile);
 }
 
-for ($i=0; $i<=rand(1, 20); $i++) {
-    $dirList = ['app', 'resources/views/', 'database', 'storage', 'public/build'];
-    $allDirectories = scanAllDir($dirList[rand(1, count($dirList) - 1)]);
+$rand = rand(1, 10);
+echo $rand;
+
+for ($i=0; $i<=$rand; $i++) {
+    $dirList = ['app', 'resources/views', 'database'];
+    $allDirectories = scanAllDir($dirList[rand(0, count($dirList) - 1)]);
+    echo $allDirectories;
+
     shuffle($allDirectories);
     $directory = $allDirectories[0] . '/';
 
@@ -48,7 +53,7 @@ for ($i=0; $i<=rand(1, 20); $i++) {
     $files = scandir($directory);
 
     shuffle($files);
-    var_dump(array_rand($files, count($files)));
+//    var_dump(array_rand($files, count($files)));
 
     $file = $files[0];
     if (!is_dir($directory . $file)) {

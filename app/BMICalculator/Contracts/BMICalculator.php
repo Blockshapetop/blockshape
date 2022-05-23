@@ -20,3 +20,4 @@ interface BMICalculator
      */
     public function calculate($height, $weight);
 }
+

@@ -73,3 +73,15 @@ $factory->define(ReferenceProduct::class, function ($faker) {
         'energy_value'  => $faker->numberBetween(30, 400)
     ];
 });
+
+
+
+
+
+
+
+
+
+
+
+

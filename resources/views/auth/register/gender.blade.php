@@ -25,3 +25,4 @@
     <md-button class="md-primary md-raised" ng-disabled="! user.gender" ng-click="slideNext()">{{ trans('pagination.next') }}</md-button>
 
 </div>
+

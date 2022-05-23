@@ -9,3 +9,4 @@
         <strong>{!! link_to($download, 'Descarcă testarea ta') !!}.</strong>
     </p>
 @endsection
+
